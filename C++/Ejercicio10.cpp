@@ -4,6 +4,7 @@ realiza intercambiando filas por columnas. Imprime la matriz
 transpuesta como salida.*/
 
 #include <iostream>
+#include <cstdlib> 
 using namespace std;
 
 int main() {
@@ -15,9 +16,13 @@ int main() {
     int matriz[filas][columnas], matrizTranspuesta[columnas][filas];
     cout << "Introduce los elementos de la matriz: " << endl;
     for (int i = 0; i < filas; i++) {
+
         for (int j = 0; j < columnas; j++) {
             cout << "Introduce el elemento [" << i + 1 << "][" << j + 1 << "]: ";
             cin >> matriz[i][j];
+            
+            system("cls"); 
+        
         }
     }
     for (int i = 0; i < filas; i++) {
